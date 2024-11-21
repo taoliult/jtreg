@@ -81,7 +81,7 @@ ifeq ($(OS_NAME),)
     GETMIXEDPATH  = cygpath -m -s
     OS_VERSION   := $(shell $(UNAME) -s | $(CUT) -d'-' -f2)
   endif
-  PS = ;
+  PS = :
 endif
 
 EMPTY :=
